@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "934841507465",
+    "project_id": "luizhbfilho-weathr",
+    "storage_bucket": "luizhbfilho-weathr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934841507465:android:cd824f99fd2681c73bb058",
+        "android_client_info": {
+          "package_name": "br.com.luizhbfilho.weathr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "934841507465-bgmbmcf53p89q17cp1a392fhk8dfr4v9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFg-8LtNUSje8-adpOstWLY-DLUWhAtaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "934841507465-bgmbmcf53p89q17cp1a392fhk8dfr4v9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
