@@ -11,6 +11,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
 import br.com.luizhbfilho.weathr.databinding.ActivityMainBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         WindowCompat.setDecorFitsSystemWindows(window, false)
         super.onCreate(savedInstanceState)
 
+        val firebaseAuth = FirebaseAuth.getInstance()
+        firebaseAuth.createUserWithEmailAndPassword("luizinho@bwebwe.com.br", "1234hahaha")
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
