@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="rich_black_fogra">#071013</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="pacific_blue">#23B5D3</color>
+    <color name="pewter_blue">#75ABBC</color>
+    <color name="cadet_blue_crayola">#A2AEBB</color>
+    <color name="gainsboro">#DFE0E2</color>
 </resources>

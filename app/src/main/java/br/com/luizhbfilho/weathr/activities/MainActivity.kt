@@ -1,17 +1,19 @@
-package br.com.luizhbfilho.weathr
+package br.com.luizhbfilho.weathr.activities
 
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
-import android.view.Menu
-import android.view.MenuItem
+import br.com.luizhbfilho.weathr.R
 import br.com.luizhbfilho.weathr.databinding.ActivityMainBinding
-import com.google.firebase.auth.FirebaseAuth
+import com.google.android.material.snackbar.Snackbar
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,8 +24,9 @@ class MainActivity : AppCompatActivity() {
         WindowCompat.setDecorFitsSystemWindows(window, false)
         super.onCreate(savedInstanceState)
 
-        val firebaseAuth = FirebaseAuth.getInstance()
-        firebaseAuth.createUserWithEmailAndPassword("luizinho@bwebwe.com.br", "1234hahaha")
+        val firebaseAuth = Firebase.auth
+        val task =
+            firebaseAuth.createUserWithEmailAndPassword("luizinho@bwebwe.com.br", "1234hahaha")
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -61,4 +64,5 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
     }
+
 }
