@@ -1,4 +1,4 @@
-package br.com.luizhbfilho.weathr.activities
+package br.com.luizhbfilho.weathr.ui.activity
 
 import android.os.Bundle
 import android.view.Menu

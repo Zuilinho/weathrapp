@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".activities.LoginActivity"
-    android:backgroundTint="">
+    android:background="@color/rich_black_fogra"
+    tools:context=".ui.activity.LoginActivity">
 
     <TextView
         android:id="@+id/appTextLogo"
@@ -14,6 +14,7 @@
         android:layout_marginBottom="250dp"
         android:fontFamily="@font/caveat_bold"
         android:text="@string/appName"
+        android:textColor="@color/white"
         android:textSize="64sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,43 +22,63 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
         android:id="@+id/emailTextInputLayout"
+        style="@style/textInputLayoutStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="48dp"
         android:hint="@string/emailText"
         app:layout_constraintEnd_toEndOf="@id/appTextLogo"
         app:layout_constraintStart_toStartOf="@id/appTextLogo"
-        app:layout_constraintTop_toBottomOf="@id/appTextLogo">
+        app:layout_constraintTop_toBottomOf="@id/appTextLogo"
+        app:startIconDrawable="@drawable/ic_email"
+        app:startIconTint="@color/white">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/emailTextInputEditText"
+            style="@style/textEditTextStyle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/passwordTextInputLayout"
+        style="@style/textInputLayoutStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="48dp"
         android:hint="@string/passwordText"
         app:layout_constraintEnd_toEndOf="@id/emailTextInputLayout"
         app:layout_constraintStart_toStartOf="@id/emailTextInputLayout"
-        app:layout_constraintTop_toBottomOf="@id/emailTextInputLayout">
+        app:layout_constraintTop_toBottomOf="@id/emailTextInputLayout"
+        app:startIconDrawable="@drawable/ic_lock"
+        app:startIconTint="@color/white">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/passwordTextInputEditText"
+            style="@style/textEditTextStyle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        style="@style/Widget.Material3.Button.ElevatedButton"
-        android:layout_width="wrap_content"
+        android:id="@+id/loginButton"
+        style="@style/saveButton"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:contentDescription=""
+        android:text="@string/loginText"
         app:layout_constraintEnd_toEndOf="@id/passwordTextInputLayout"
         app:layout_constraintStart_toStartOf="@id/passwordTextInputLayout"
-        app:layout_constraintTop_toBottomOf="@+id/passwordTextInputLayout"/>
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextInputLayout" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

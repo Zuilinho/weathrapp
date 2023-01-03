@@ -46,4 +46,5 @@
     <string name="appName">Weathr</string>
     <string name="emailText">Email</string>
     <string name="passwordText">Password</string>
+    <string name="loginText">LOGIN</string>
 </resources>
