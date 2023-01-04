@@ -47,4 +47,6 @@
     <string name="emailText">Email</string>
     <string name="passwordText">Password</string>
     <string name="loginText">LOGIN</string>
+    <string name="accountQuestion">Don\'t have an account?</string>
+    <string name="signInText">Sign in</string>
 </resources>

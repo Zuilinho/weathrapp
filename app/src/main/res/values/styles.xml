@@ -6,7 +6,7 @@
     </style>
     <style name="textInputLayoutStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox">
         <item name="android:textColorHint">@color/white</item>
-        <item name="boxStrokeColor">@color/white</item>
+        <item name="boxStrokeColor">@color/pacific_blue</item>
         <item name="hintTextColor">@color/white</item>
     </style>
     <style name="textEditTextStyle">
