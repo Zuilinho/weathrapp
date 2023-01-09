@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/rich_black_fogra"
-    tools:context=".ui.activity.LoginActivity">
+    tools:context=".ui.activity.MainActivity">
 
     <TextView
         android:id="@+id/appTextLogo"
@@ -68,16 +68,30 @@
             android:textColor="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/accountQuestionTextView"
+    <Button
+        android:id="@+id/forgotPasswordButton"
+        style="@style/Widget.Material3.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="@string/accountQuestion"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="@id/passwordTextInputLayout"
+        android:text="@string/forgotPasswordText"
+        android:layout_marginTop="2dp"
+
+        android:textColor="@color/pacific_blue"
+        app:layout_constraintTop_toBottomOf="@id/passwordTextInputLayout"
         app:layout_constraintStart_toStartOf="@id/passwordTextInputLayout"
-        app:layout_constraintTop_toBottomOf="@id/passwordTextInputLayout" />
+        app:layout_constraintEnd_toEndOf="@id/passwordTextInputLayout"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        style="@style/saveButton"
+        android:layout_width="@dimen/defaultConfirmButton"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:contentDescription=""
+        android:text="@string/loginText"
+        app:layout_constraintEnd_toEndOf="@id/forgotPasswordButton"
+        app:layout_constraintStart_toStartOf="@id/forgotPasswordButton"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPasswordButton" />
 
     <Button
         android:id="@+id/signInButton"
@@ -87,21 +101,8 @@
         android:text="@string/signInText"
         android:layout_marginTop="12dp"
         android:textColor="@color/pacific_blue"
-        app:layout_constraintTop_toBottomOf="@id/passwordTextInputLayout"
-        app:layout_constraintStart_toStartOf="@id/passwordTextInputLayout"
-        app:layout_constraintEnd_toEndOf="@id/passwordTextInputLayout"/>
-
-    <Button
-        android:id="@+id/loginButton"
-        style="@style/saveButton"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:contentDescription=""
-        android:text="@string/loginText"
-        app:layout_constraintEnd_toEndOf="@id/signInButton"
-        app:layout_constraintStart_toStartOf="@id/signInButton"
-        app:layout_constraintTop_toBottomOf="@+id/signInButton" />
-
+        app:layout_constraintTop_toBottomOf="@id/loginButton"
+        app:layout_constraintStart_toStartOf="@id/loginButton"
+        app:layout_constraintEnd_toEndOf="@id/loginButton"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

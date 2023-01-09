@@ -48,5 +48,11 @@
     <string name="passwordText">Password</string>
     <string name="loginText">LOGIN</string>
     <string name="accountQuestion">Don\'t have an account?</string>
-    <string name="signInText">Sign in</string>
+    <string name="signInText">Tap here if you don\'t have an account</string>
+    <string name="createAccountText">Create your account</string>
+    <string name="enterEmailHint">Enter your best email</string>
+    <string name="createPasswordText">Create your password</string>
+    <string name="confirmPasswordText">Confirm password</string>
+    <string name="confirmAccountText">CREATE ACCOUNT</string>
+    <string name="forgotPasswordText">Forgot password? Click here</string>
 </resources>
